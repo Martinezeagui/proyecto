@@ -1,3 +1,4 @@
+
 *{
   box-sizing:content-box;
   margin: 0;
@@ -24,7 +25,7 @@ header a:hover{
 .flex-links {
   display: flex;
   list-style-type: none;
-  gap: 25px;
+  gap: 38px;
   flex-wrap: wrap;
 
 }
@@ -32,19 +33,32 @@ header a:hover{
 .flex-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.flex-container img {
+  width: 300px;
 }
 .item{
-  border: 2px solid white;
+  border: 8px solid, green;
 }
 .descripcion{
   font-size: small;
 }
-.form-section {
-  background-color: #ff4400; 
-  text-align: center; 
-  border: 2px black solid;
-  border-radius: 12px;
-  padding-bottom: 20px;
+.btn-enviar {
+  margin-top: 6px;
+  padding: 12px;
+  color: #8ed0e6;
+  border-color: #8ed0e6;
+  background-color: darkblue;
+  border-radius: 8px;
+  font-size: clamp(16px, 8vw, 32px);
+}
+.btn-enviar:hover{
+    padding: 18px;
+    color: rgb(42, 165, 61);
+    background-color: red;
+
 }
 
 footer{
@@ -57,6 +71,10 @@ footer{
 
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (min-width:601.1px) {
+   .footer {
+    background-color: black;
+
+  }
 
 }
